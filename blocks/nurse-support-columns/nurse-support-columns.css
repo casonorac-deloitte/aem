@@ -1,0 +1,83 @@
+.nurse-support-columns {
+    color: #233648;
+}
+
+.nurse-support-columns h2 {
+    margin-top: 0;
+    color: #005f84;
+    font-size: clamp(2rem, 5.2vw, 3rem);
+    line-height: 1.1;
+}
+
+.nurse-support-columns h3 {
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    color: #2b3f52;
+    font-size: clamp(1.65rem, 2.7vw, 2.1rem);
+}
+
+.nurse-support-columns p {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+    line-height: 1.35;
+}
+
+.nurse-support-columns > div {
+    display: grid;
+    gap: 28px;
+}
+
+.nurse-support-columns-callout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    margin-top: 18px;
+    border-radius: 16px;
+    background-color: #d9e1e7;
+    padding: 24px;
+}
+
+.nurse-support-columns-callout-icon {
+    position: relative;
+    width: 18px;
+    height: 31px;
+    border: 3px solid #00749e;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.nurse-support-columns-callout-icon::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #00749e;
+}
+
+.nurse-support-columns-callout-content p {
+    margin-bottom: 0.75em;
+}
+
+.nurse-support-columns a:any-link {
+    color: #005f84;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media (width >= 900px) {
+    .nurse-support-columns > div {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 56px;
+        align-items: start;
+    }
+
+    .nurse-support-columns-left {
+        border-right: 1px solid #d0d5db;
+        padding-right: 56px;
+    }
+}
